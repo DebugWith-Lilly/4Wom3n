@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndoSense AI | Create Account</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="phone">
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+
+        <span id="time">00:00</span>
+
+        <div class="status-icons">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+        </div>
+
+    </div>
+
+    <!-- Screen -->
+    <div class="screen">
+
+        <div class="text-content">
+            <h1>Create Account</h1>
+            <p>Your Health. Your Voice. Your Future.</p>
+        </div>
+
+        <form class="register-form">
+
+            <div class="input-group">
+                <label for="name">First Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your first name"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label for="surname">Surname</label>
+                <input
+                    type="text"
+                    id="surname"
+                    placeholder="Enter your surname"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Enter your age"
+                    min="1"
+                    max="120"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label for="email"> MedicalEmail Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="name@MED.net"
+                    pattern="[a-zA-Z0-9._%+-]+@MED\.net "
+                    title="Please use an email address ending in @MED.net"
+                    required>
+            </div>
+            
+            <div class ="input-group">
+                <label for="specialization">Specialization</label>
+                
+                <select id="specialization" name="specialization" required>
+                    <option value="">Select your specialization</option>
+                    <option value="gynecology">Gynecology</option>
+                    <option value="endocrinology">Endocrinology</option>
+                    <option value="general_practice">General Practice</option>
+                 </select>
+            </div>
+            <div class="input-group">
+                <label for="hospital">Hospital in Umhlanga</label>
+                <select id="hospital" name="hospital" required>
+                    <option value="">Select your hospital</option>
+                    <option value="netcare">Netcare Umhlanga Hospital</option>
+                    <option value="st_annes">St. Anne's Hospital</option>
+                    <option value="umhlanga_clinic">Umhlanga Clinic</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create a password"
+                    required>
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Create Account
+            </button>
+
+            <p class="signup-text">
+                Already have an account?
+                <a href="login-doctor.html">Log In</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
