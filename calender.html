@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndoSense AI | Cycle Calendar</title>
+
+    <!-- Calendar CSS -->
+    <link rel="stylesheet" href="calender.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+    <!-- ==========================
+         STATUS BAR
+    ========================== -->
+
+    <div class="status-bar">
+
+        <span id="time">00:00</span>
+
+        <div class="status-icons">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+        </div>
+
+    </div>
+
+    <!-- ==========================
+         SCREEN
+    ========================== -->
+
+    <div class="screen">
+
+        <div class="text-content">
+
+            <h1>Cycle Calendar</h1>
+
+            <p>
+                Select the first day of your period
+                to predict your cycle.
+            </p>
+
+        </div>
+
+        <!-- ==========================
+             CALENDAR
+        ========================== -->
+
+        <div class="calendar">
+
+            <div class="calendar-header">
+
+                <button id="prevMonth" class="nav-btn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <h2 id="monthYear"></h2>
+
+                <button id="nextMonth" class="nav-btn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+            <!-- Week Days -->
+
+            <div class="calendar-days">
+
+                <span>Sun</span>
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+
+            </div>
+
+            <!-- Calendar Dates -->
+
+            <div class="calendar-dates" id="calendarDates"></div>
+
+        </div>
+
+        <!-- ==========================
+             LEGEND
+        ========================== -->
+
+        <div class="cycle-status">
+
+            <div class="status-item">
+                <i class="fa-solid fa-circle period"></i>
+                <span>Period</span>
+            </div>
+
+            <div class="status-item">
+                <i class="fa-solid fa-circle fertile"></i>
+                <span>Fertile Window</span>
+            </div>
+
+            <div class="status-item">
+                <i class="fa-solid fa-circle ovulation"></i>
+                <span>Ovulation</span>
+            </div>
+
+            <div class="status-item">
+                <i class="fa-solid fa-circle logged"></i>
+                <span>Today</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Calendar JavaScript -->
+<script src="calender.js"></script>
+
+</body>
+</html>
