@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndoSense AI | Find A Doctor</title>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="phone">
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span id="time">00:00</span>
+
+            <div class="status-icons">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- Screen -->
+        <div class="screen">
+
+            <!-- Top Text -->
+            <div class="text-content">
+                <h1>EndoSense AI</h1>
+                <p>Your Health. Your Voice. Your Future</p>
+            </div>
+
+            <div class="doctor-container">
+
+            {% for doctor in all_doctors %}
+
+            <div class="doctor-card">
+
+                <img src="{{ url_for('static', filename=doctor['profile_picture']) }}">
+
+                <h3>
+                    Dr. {{ doctor["first_name"] }}
+                    {{ doctor["last_name"] }}
+                </h3>
+
+                <p>{{ doctor["specialization"].title() }}</p>
+
+                <p>{{ doctor["email"] }}</p>
+
+                <a href="/doctor/{{ doctor['doctor_id'] }}">
+                    View Profile
+                </a>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+
+</body>
+</html>
