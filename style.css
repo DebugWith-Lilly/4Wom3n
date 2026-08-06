@@ -161,10 +161,27 @@ body {
     background: rgba(90, 61, 92, 0.10);
 }
 
-/* Remove link underline */
+/* Taking out link underline */
 .button-group a {
     text-decoration: none;
 }
+/* Doctor Access Link */
+.doctor-link{
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #5A3D5C;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.doctor-link:hover{
+    color: #432B44;
+    text-decoration: underline;
+}
+
 /* ==========================
    LOGIN PAGE
 ========================== */
