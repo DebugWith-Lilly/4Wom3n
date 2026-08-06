@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndoSense AI | Symptom Check</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="phone">
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span id="time">00:00</span>
+
+            <div class="status-icons">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- Screen -->
+        <div class="screen">
+
+            <!-- Symptom Question -->
+            <div class="symptom-container">
+
+                <h2>
+                    How would you describe your
+                    <br>
+                   pelvic pain outside of your period?
+                </h2>
+
+                <div class="option-list">
+
+                    <button class="option mild" type="button">
+                        <h3>Mild</h3>
+                        <p>A slight ache, but I can carry on with my day.</p>
+                    </button>
+
+                    <button class="option moderate" type="button">
+                        <h3>Moderate</h3>
+                        <p>Noticeable pain that makes me want to use a heat pack or rest.</p>
+                    </button>
+
+                    <button class="option severe" type="button">
+                        <h3>Severe</h3>
+                        <p>The pain makes it hard to walk, stand ot focus.</p>
+                    </button>
+
+                    <button class="option very-severe" type="button">
+                        <h3>Very Severe</h3>
+                        <p>
+                            The pain is overwhelming. I can't function normally.
+                            I struggle to move, think, or do even simple tasks.
+                        </p>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Next Button -->
+            <div class="button-group symptom-button">
+                <a href="symptom-3.html" class="primary-btn">Next</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
