@@ -63,6 +63,7 @@ body {
 .screen {
     height: calc(100% - 40px);
     padding: 35px 25px;
+    overflow-y: auto;
 
     display: flex;
     flex-direction: column;
@@ -189,7 +190,8 @@ body {
     color: #5A3D5C;
 }
 
-.input-group input {
+.input-group input,
+.input-group select {
     width: 100%;
     height: 56px;
 
@@ -207,11 +209,17 @@ body {
     transition: 0.25s ease;
 }
 
+.input-group select {
+    appearance: none;
+    cursor: pointer;
+}
+
 .input-group input::placeholder {
     color: #8A8A8A;
 }
 
-.input-group input:focus {
+.input-group input:focus,
+.input-group select:focus {
     border: 2px solid #5A3D5C;
 }
 
@@ -307,5 +315,146 @@ body {
 }
 
 .register-form .primary-btn:hover{
+    background:#472F49;
+}
+/* ==========================
+   SYMPTOM PAGES
+========================== */
+
+.symptom-container{
+    width:100%;
+    margin-top:8px;
+}
+
+.symptom-container h2{
+    font-size:28px;
+    font-weight:700;
+    color:#2E1C30;
+    line-height:1.2;
+    text-align:left;
+    margin-bottom:24px;
+    max-width:300px;
+}
+
+/* ==========================
+   OPTIONS
+========================== */
+
+.option-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.option{
+    width:100%;
+
+    background:#F7EFD9;
+
+    border:2px solid #E8DCC2;
+    border-radius:18px;
+
+    padding:14px 18px;
+
+    text-align:left;
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+}
+
+.option h3{
+    font-size:17px;
+    font-weight:700;
+    color:#2E1C30;
+    margin-bottom:4px;
+}
+
+.option p{
+    font-size:13px;
+    color:#666;
+    line-height:1.35;
+}
+
+/* Hover Animation */
+
+.option:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 14px rgba(0,0,0,.10);
+}
+
+/* Mild */
+
+.option.mild:hover,
+.option.mild.selected{
+    background:#B9E4A8;
+    border-color:#7DBB67;
+}
+
+/* Moderate */
+
+.option.moderate:hover,
+.option.moderate.selected{
+    background:#F6E39A;
+    border-color:#D7BF59;
+}
+
+/* Severe */
+
+.option.severe:hover,
+.option.severe.selected{
+    background:#F5C08C;
+    border-color:#DD9450;
+}
+
+/* Very Severe */
+
+.option.very-severe:hover,
+.option.very-severe.selected{
+    background:#E7A4A4;
+    border-color:#C56A6A;
+}
+
+.option:hover h3,
+.option:hover p,
+.option.selected h3,
+.option.selected p{
+    color:#2E1C30;
+}
+
+/* ==========================
+   NEXT BUTTON
+========================== */
+
+.symptom-button{
+    width:100%;
+    margin-top:24px;
+}
+
+.symptom-button .primary-btn{
+    width:100%;
+    height:56px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:none;
+    border-radius:18px;
+
+    background:#5A3D5C;
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:17px;
+    font-weight:600;
+
+    transition:.25s ease;
+}
+
+.symptom-button .primary-btn:hover{
     background:#472F49;
 }
