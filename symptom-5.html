@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndoSense AI | Symptom Check</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="phone">
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span id="time">00:00</span>
+
+            <div class="status-icons">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- Screen -->
+        <div class="screen">
+
+            <!-- Symptom Question -->
+            <div class="symptom-container">
+
+                <h2>
+                    How would you describe the
+                    <br>
+                    difficulty you have experienced with getting or staying pregnant?
+                </h2>
+
+                <div class="option-list">
+
+                    <button class="option mild" type="button">
+                        <h3>Mild</h3>
+                        <p>It has taken a little longer than expected.</p>
+                    </button>
+
+                    <button class="option moderate" type="button">
+                        <h3>Moderate</h3>
+                        <p>I've been trying for a while without success.</p>
+                    </button>
+
+                    <button class="option severe" type="button">
+                        <h3>Severe</h3>
+                        <p>I've had significant difficulty getting or staying pregnant.</p>
+                    </button>
+
+                    <button class="option very-severe" type="button">
+                        <h3>Very Severe</h3>
+                        <p>
+                          Getting or staying pregnant has been an ongoing struggle.
+                        </p>
+                    </button>
+
+                </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
