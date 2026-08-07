@@ -475,3 +475,1540 @@ body {
 .symptom-button .primary-btn:hover{
     background:#472F49;
 }
+/* ==========================
+TOP NAVIGATION
+========================== */
+
+.top-nav{
+    width:100%;
+    margin-top:30px;
+    margin-bottom:25px;
+
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+
+.top-nav a{
+
+    flex:1;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:14px 0;
+
+    border-radius:18px;
+
+    background:#F7EFD9;
+
+    color:#5A3D5C;
+
+    font-size:15px;
+    font-weight:600;
+
+    border:2px solid transparent;
+
+    transition:.3s ease;
+}
+
+.top-nav a:hover{
+
+    transform:translateY(-2px);
+
+    background:#EFE3C2;
+
+    box-shadow:0 8px 18px rgba(90,61,92,.15);
+}
+
+.top-nav a.active{
+
+    background:#5A3D5C;
+
+    color:white;
+
+    box-shadow:0 10px 20px rgba(90,61,92,.30);
+}
+/* ==========================
+   GRAPH CARD
+========================== */
+
+.graph-card{
+    width:95%;
+    max-width:420px;
+    margin:30px auto;
+    padding:25px;
+    background:#FFF9F2;
+    border-radius:24px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/* ==========================
+   GRAPH SECTION
+========================== */
+
+.graph-card{
+    width:100%;
+    margin-top:35px;
+    padding:0 20px;
+    background:transparent;
+    box-shadow:none;
+    border:none;
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.graph-header h3{
+    margin:0;
+    color:#2E1B3F;      
+    font-size:18px;
+    font-weight:700;
+}
+
+.graph-header span{
+    display:none;
+}
+
+/* ==========================
+   SVG
+========================== */
+
+.trend-graph{
+    width:100%;
+    height:280px;
+    display:block;
+    overflow:visible;
+}
+
+/* ==========================
+   AXES
+========================== */
+
+.axis{
+    stroke:#6B456F;   
+    stroke-width:2;
+}
+/* ==========================
+   GRID
+========================== */
+
+.grid{
+    stroke:#EFE4DA;
+    stroke-width:1;
+}
+
+/* ==========================
+   LABELS
+========================== */
+
+.axis-label{
+    fill:#4A2C5A;      
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:700;
+}
+
+/* ==========================
+   FUTURE LINE
+========================== */
+
+.trend-line{
+    fill:none;
+    stroke:#8A3FB4;
+    stroke-width:3;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+/* ==========================
+   FUTURE POINTS
+========================== */
+
+.point{
+    fill:#8A3FB4;
+    stroke:#FFFFFF;
+    stroke-width:2;
+}
+/* ==========================
+HISTORY PAGE
+========================== */
+
+.history-list{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    margin-top:10px;
+    padding-bottom:30px;
+}
+
+/* ==========================
+HISTORY CARD
+========================== */
+
+.history-card{
+    width:100%;
+    background:#F7EFD9;
+    border-radius:22px;
+    padding:18px 20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 8px 18px rgba(90,61,92,.08);
+    transition:.25s ease;
+    cursor:pointer;
+}
+
+.history-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 24px rgba(90,61,92,.15);
+}
+
+/* ==========================
+LEFT SIDE
+========================== */
+
+.history-info h3{
+    font-size:17px;
+    font-weight:700;
+    color:#2E1C30;
+    margin-bottom:6px;
+}
+
+.history-info p{
+    font-size:13px;
+    color:#7A6A74;
+}
+
+/* ==========================
+RIGHT SIDE
+========================== */
+
+.history-right{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.history-right i{
+    color:#5A3D5C;
+    font-size:15px;
+}
+
+/* ==========================
+SEVERITY BADGES
+========================== */
+
+.severity{
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:700;
+}
+
+/* High */
+
+.severity.high{
+    background:#F6C3C3;
+    color:#8B2E2E;
+}
+
+/* Medium */
+
+.severity.medium{
+    background:#F7E6B0;
+    color:#8A6814;
+}
+
+/* Low */
+
+.severity.low{
+    background:#CFEBC8;
+    color:#2E6B34;
+}
+
+/* ==========================
+SMALL SCREEN ANIMATION
+========================== */
+
+.history-card:active{
+    transform:scale(.98);
+}
+/* I put this so I dont forget it's to make it clickable */
+.history-link{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+}
+/* =====================================================
+   ENDOSENSE AI
+   RISK SCORE PAGE
+   ===================================================== */
+
+
+/* =====================================================
+   SCREEN
+   ===================================================== */
+
+.risk-screen {
+
+    background: #fff7ed;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    padding-bottom: 25px;
+
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.risk-header {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 65px;
+
+    padding: 0 20px;
+
+}
+
+
+.risk-header h1 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #29232c;
+
+}
+
+
+.risk-back-btn {
+
+    position: absolute;
+
+    left: 18px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 36px;
+
+    height: 36px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #39323b;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+}
+/* =====================================================
+   ENDOSENSE AI
+   RISK SCORE PAGE
+   ===================================================== */
+
+
+/* =====================================================
+   RISK SCREEN
+   ===================================================== */
+
+.risk-screen {
+
+    background: #E6D3A3;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 0 25px 30px;
+
+}
+
+
+/* =====================================================
+   RISK HEADER
+   ===================================================== */
+
+.risk-header {
+
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 65px;
+
+}
+
+
+.risk-header h1 {
+
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #2E1C30;
+
+}
+
+
+/* Back button */
+
+.risk-back-btn {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #5A3D5C;
+
+    font-size: 19px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+
+}
+
+
+.risk-back-btn:hover {
+
+    color: #472F49;
+
+    transform: translateY(-50%) translateX(-2px);
+
+}
+/* =====================================================
+   ENDOSENSE AI
+   RISK SCORE EXPERIENCE
+   ===================================================== */
+
+
+/* =====================================================
+   RISK SCREEN
+   ===================================================== */
+
+.risk-screen {
+    width: 100%;
+
+    background: #E6D3A3;
+
+    padding: 0 22px 30px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+}
+
+.risk-screen::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =====================================================
+   RISK HEADER
+   ===================================================== */
+
+.risk-header {
+    width: 100%;
+    height: 65px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+.risk-header h1 {
+    margin: 0;
+
+    color: #2E1C30;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    letter-spacing: -0.3px;
+}
+
+
+/* Back button */
+
+.risk-back-btn {
+    position: absolute;
+
+    left: 0;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F7EFD9;
+
+    border: 2px solid #E8DCC2;
+
+    border-radius: 13px;
+
+    color: #5A3D5C;
+
+    font-size: 16px;
+
+    text-decoration: none;
+
+    transition: all .25s ease;
+}
+
+
+.risk-back-btn:hover {
+    background: #5A3D5C;
+
+    color: #FFFFFF;
+
+    transform: translateY(-50%) translateX(-2px);
+}
+
+
+.risk-back-btn:active {
+    transform: translateY(-50%) scale(.95);
+}
+
+
+/* =====================================================
+   RISK SCORE SECTION
+   ===================================================== */
+
+.risk-score-section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =====================================================
+   SCORE INTRO
+   ===================================================== */
+
+.risk-intro {
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 4px;
+}
+
+
+.risk-intro p {
+    margin: 0;
+
+    color: #6F626C;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   SCORE GAUGE
+   ===================================================== */
+
+.score-circle {
+    width: 245px;
+    height: 160px;
+
+    margin-top: 20px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    overflow: hidden;
+
+    background:
+        conic-gradient(
+            from 270deg,
+            #5A3D5C 0deg,
+            #6E4671 65deg,
+            #8A3FB4 165deg,
+            #B77BBE 220deg,
+            #D7C0D8 260deg,
+            transparent 260deg
+        );
+
+    border-radius: 160px 160px 0 0;
+
+    box-shadow:
+        0 12px 25px rgba(90, 61, 92, .13);
+}
+
+
+/* Inner gauge */
+
+.score-circle::after {
+    content: "";
+
+    position: absolute;
+
+    width: 203px;
+    height: 122px;
+
+    bottom: 0;
+
+    background: #E6D3A3;
+
+    border-radius: 125px 125px 0 0;
+}
+
+
+/* =====================================================
+   SCORE NUMBER
+   ===================================================== */
+
+.score-number {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: baseline;
+
+    margin-bottom: 34px;
+
+    color: #2E1C30;
+
+    line-height: 1;
+}
+
+
+.score-number span {
+    font-size: 52px;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+
+.score-number small {
+    margin-left: 4px;
+
+    color: #776B75;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   RISK LABEL
+   ===================================================== */
+
+.score-label {
+    position: absolute;
+
+    z-index: 3;
+
+    bottom: 8px;
+
+    width: 100%;
+
+    padding: 0 10px;
+
+    color: #5A3D5C;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   SCORE SCALE
+   ===================================================== */
+
+.score-scale {
+    width: 245px;
+
+    margin-top: 9px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #7A6C76;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   RISK DESCRIPTION
+   ===================================================== */
+
+.risk-description {
+    width: 100%;
+
+    max-width: 315px;
+
+    margin: 18px auto 22px;
+
+    color: #5A5A5A;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   WHAT THIS MEANS CARD
+   ===================================================== */
+
+.risk-info-card {
+    width: 100%;
+
+    padding: 21px;
+
+    background: #F7EFD9;
+
+    border: 2px solid #E8DCC2;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 20px rgba(90, 61, 92, .08);
+}
+
+
+/* Card heading */
+
+.risk-info-card h2 {
+    margin: 0 0 15px;
+
+    color: #2E1C30;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   BULLET POINTS
+   ===================================================== */
+
+.risk-points {
+    margin: 0;
+
+    padding-left: 21px;
+
+    color: #5A5A5A;
+}
+
+
+.risk-points li {
+    padding-left: 4px;
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+}
+
+
+.risk-points li:last-child {
+    margin-bottom: 0;
+}
+
+
+.risk-points li::marker {
+    color: #8A3FB4;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   SCORE SUMMARY CARD
+   ===================================================== */
+
+.risk-summary {
+    width: 100%;
+
+    margin-top: 16px;
+
+    padding: 17px 19px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    background: rgba(247, 239, 217, .75);
+
+    border: 1px solid #E8DCC2;
+
+    border-radius: 18px;
+}
+
+
+.risk-summary-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.risk-summary-text strong {
+    color: #2E1C30;
+
+    font-size: 14px;
+}
+
+
+.risk-summary-text span {
+    color: #786B75;
+
+    font-size: 12px;
+}
+
+
+.risk-summary-value {
+    color: #5A3D5C;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   ACTION AREA
+   ===================================================== */
+
+.risk-actions {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 22px;
+}
+
+
+/* =====================================================
+   DOCTOR REPORT BUTTON
+   ===================================================== */
+
+.risk-primary-btn {
+    width: 100%;
+
+    min-height: 56px;
+
+    padding: 0 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #5A3D5C;
+
+    color: #FFFFFF;
+
+    border: none;
+
+    border-radius: 18px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    box-shadow:
+        0 9px 20px rgba(90, 61, 92, .20);
+
+    transition: all .25s ease;
+}
+
+
+.risk-primary-btn:hover {
+    background: #472F49;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 24px rgba(90, 61, 92, .25);
+}
+
+
+.risk-primary-btn:active {
+    transform: scale(.98);
+}
+
+
+/* =====================================================
+   SCORE CALCULATION LINK
+   ===================================================== */
+
+.score-link {
+    margin-top: 17px;
+
+    color: #5A3D5C;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    transition: all .25s ease;
+}
+
+
+.score-link:hover {
+    color: #432B44;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   DISCLAIMER
+   ===================================================== */
+
+.risk-disclaimer {
+    max-width: 315px;
+
+    margin: 18px auto 0;
+
+    color: #81747D;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   SMALL PHONE / SHORT SCREEN
+   ===================================================== */
+
+@media (max-height: 750px) {
+
+    .risk-header {
+        height: 55px;
+    }
+
+    .score-circle {
+        width: 215px;
+        height: 140px;
+
+        margin-top: 12px;
+    }
+
+    .score-circle::after {
+        width: 177px;
+        height: 107px;
+    }
+
+    .score-number span {
+        font-size: 46px;
+    }
+
+    .score-number {
+        margin-bottom: 29px;
+    }
+
+    .risk-description {
+        margin-top: 13px;
+        margin-bottom: 17px;
+    }
+
+    .risk-info-card {
+        padding: 17px;
+    }
+
+    .risk-summary {
+        padding: 14px 16px;
+    }
+
+    .risk-actions {
+        margin-top: 17px;
+    }
+
+}
+/* =====================================================
+   ENDOSENSE AI REPORT SCREEN
+===================================================== */
+
+/* =====================================================
+   REPORT SCREEN
+===================================================== */
+
+.risk-screen {
+
+    width: 100%;
+
+    background: #E6D3A3;
+
+    padding: 20px 22px 30px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+
+    align-items: stretch;
+
+}
+
+.risk-screen::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =====================================================
+   REPORT CONTAINER
+===================================================== */
+
+.endo-report {
+
+    width: 100%;
+
+    color: #2E1C30;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* =====================================================
+   REPORT HEADER
+===================================================== */
+
+.report-header {
+
+    width: 100%;
+
+    padding: 5px 0 18px;
+
+    border-bottom: 1px solid rgba(90, 61, 92, 0.12);
+
+}
+
+
+.report-header h1 {
+
+    margin: 0 0 7px;
+
+    color: #2E1C30;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: 1.25;
+
+}
+
+
+.report-header p {
+
+    margin: 0;
+
+    color: #6F626C;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+}
+
+
+/* =====================================================
+   REPORT SECTIONS
+===================================================== */
+
+.report-section {
+
+    width: 100%;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid rgba(90, 61, 92, 0.10);
+
+}
+
+
+.report-section h2 {
+
+    margin: 0 0 12px;
+
+    color: #2E1C30;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.report-section ul {
+
+    margin: 0;
+
+    padding-left: 18px;
+
+    color: #4F4650;
+
+}
+
+
+.report-section li {
+
+    margin-bottom: 8px;
+
+    padding-left: 3px;
+
+    color: #4F4650;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+}
+
+
+.report-section li:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.report-section li::marker {
+
+    color: #5A3D5C;
+
+    font-size: 10px;
+
+}
+
+
+.report-section li strong {
+
+    color: #2E1C30;
+
+}
+
+
+/* =====================================================
+   TOP SYMPTOMS
+===================================================== */
+
+.symptom-tags {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+
+.symptom-tags span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 7px 11px;
+
+    background: #F7D9DC;
+
+    border-radius: 999px;
+
+    color: #A94E62;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+}
+
+
+/* =====================================================
+   RISK SCORE
+===================================================== */
+
+.report-risk-score {
+
+    display: flex;
+
+    align-items: baseline;
+
+    flex-wrap: wrap;
+
+}
+
+
+.report-risk-score strong {
+
+    color: #5A3D5C;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+}
+
+
+.report-risk-score span {
+
+    margin-left: 3px;
+
+    color: #786B75;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+.report-risk-score p {
+
+    width: 100%;
+
+    margin: 7px 0 0;
+
+    color: #5A3D5C;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   RECOMMENDATION
+===================================================== */
+
+.recommendation {
+
+    border-bottom: none;
+
+}
+
+
+.recommendation p {
+
+    margin: 0;
+
+    color: #4F4650;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+}
+
+
+/* =====================================================
+   DOWNLOAD PDF BUTTON
+===================================================== */
+
+.download-report-btn {
+
+    width: 100%;
+
+    min-height: 50px;
+
+    margin-top: 18px;
+
+    padding: 0 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: #5A3D5C;
+
+    color: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(90, 61, 92, 0.20);
+
+    transition: all 0.25s ease;
+
+}
+
+
+.download-report-btn:hover {
+
+    background: #472F49;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(90, 61, 92, 0.25);
+
+}
+
+
+.download-report-btn:active {
+
+    transform: scale(0.98);
+
+}
+
+
+.download-report-btn:disabled {
+
+    opacity: 0.75;
+
+    cursor: wait;
+
+    transform: none;
+
+}
+
+
+/* =====================================================
+   DOWNLOAD ICON
+===================================================== */
+
+.download-report-btn i {
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   PDF CAPTURE
+===================================================== */
+
+/*
+   Keeps the report background when html2canvas
+   captures the report.
+*/
+
+.endo-report {
+
+    background: #E6D3A3;
+
+}
+
+
+/* =====================================================
+   SMALL PHONE SCREENS
+===================================================== */
+
+@media (max-height: 750px) {
+
+    .risk-screen {
+
+        padding: 15px 20px 25px;
+
+    }
+
+
+    .report-header {
+
+        padding-bottom: 14px;
+
+    }
+
+
+    .report-header h1 {
+
+        font-size: 18px;
+
+    }
+
+
+    .report-section {
+
+        padding: 15px 0;
+
+    }
+
+
+    .report-section h2 {
+
+        font-size: 14px;
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .report-section li {
+
+        font-size: 12px;
+
+        margin-bottom: 6px;
+
+    }
+
+
+    .symptom-tags span {
+
+        font-size: 11px;
+
+        padding: 6px 10px;
+
+    }
+
+
+    .report-risk-score strong {
+
+        font-size: 29px;
+
+    }
+
+
+    .recommendation p {
+
+        font-size: 12px;
+
+    }
+
+
+    .download-report-btn {
+
+        min-height: 48px;
+
+        margin-top: 15px;
+
+    }
+
+}
