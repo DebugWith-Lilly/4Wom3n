@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndoSense AI - Risk Score</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="phone">
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <span id="time">00:00</span>
+
+            <div class="status-icons">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- Risk Score Screen -->
+        <div class="screen risk-screen">
+
+            <!-- Header -->
+            <div class="risk-header">
+                <a href="javascript:history.back()"
+                   class="risk-back-btn"
+                   aria-label="Go back">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+
+                <h1>Your Risk Score</h1>
+            </div>
+
+            <!-- Score -->
+            <div class="risk-score-section">
+
+                <div class="score-circle">
+                    <div class="score-number">
+                        <span>72</span>
+                        <small>/100</small>
+                    </div>
+
+                    <div class="score-label">
+                        Moderate to High Risk
+                    </div>
+                </div>
+
+                <!-- Explanation -->
+                <p class="risk-description">
+                    Your symptoms suggest a higher chance of
+                    endometriosis. This is not a diagnosis.
+                </p>
+
+                <!-- What This Means -->
+                <div class="risk-info-card">
+                    <h2>What this means</h2>
+
+                    <ul class="risk-points">
+                        <li>Consider speaking to a specialist</li>
+                        <li>Track your symptoms consistently</li>
+                        <li>Early evaluation can help</li>
+                    </ul>
+                </div>
+
+                <!-- Actions -->
+                <div class="risk-actions">
+
+                    <a href="doctor-report.html" class="risk-primary-btn">
+                        Generate Report for Doctor
+                    </a>
+
+                    <a href="score.html" class="score-link">
+                        How is this score calculated?
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
