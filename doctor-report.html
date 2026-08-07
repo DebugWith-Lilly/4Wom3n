@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EndoSense AI - Report</title>
+
+
+    <!-- ==========================
+         MAIN CSS
+    =========================== -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+
+    <!-- ==========================
+         FONT AWESOME
+    =========================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================
+         PHONE
+    =========================== -->
+
+    <div class="phone">
+
+
+        <!-- ==========================
+             STATUS BAR
+        =========================== -->
+
+        <div class="status-bar">
+
+            <span id="time">00:00</span>
+
+            <div class="status-icons">
+
+                <i class="fa-solid fa-signal"></i>
+
+                <i class="fa-solid fa-wifi"></i>
+
+                <i class="fa-solid fa-battery-full"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==========================
+             REPORT SCREEN
+        =========================== -->
+
+        <div class="screen risk-screen">
+
+
+            <!-- ==========================
+                 REPORT
+            =========================== -->
+
+            <div class="endo-report" id="endoReport">
+
+
+                <!-- ==========================
+                     REPORT HEADER
+                =========================== -->
+
+                <div class="report-header">
+
+                    <h1>
+                        Your EndoSense AI Report
+                    </h1>
+
+                    <p>
+                        Generated on May 20, 2025
+                    </p>
+
+                </div>
+
+
+
+                <!-- ==========================
+                     SUMMARY
+                =========================== -->
+
+                <section class="report-section">
+
+                    <h2>
+                        Summary
+                    </h2>
+
+
+                    <ul>
+
+                        <li>
+                            You have tracked
+                            <strong>3 cycles</strong>
+                        </li>
+
+
+                        <li>
+                            <strong>12 symptoms</strong>
+                            logged
+                        </li>
+
+
+                        <li>
+                            Pain mostly in lower abdomen
+                            <br>
+                            and lower back
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+
+                <!-- ==========================
+                     TOP SYMPTOMS
+                =========================== -->
+
+                <section class="report-section">
+
+                    <h2>
+                        Top Symptoms
+                    </h2>
+
+
+                    <div class="symptom-tags">
+
+                        <span>
+                            Pelvic Pain
+                        </span>
+
+                        <span>
+                            Back Pain
+                        </span>
+
+                        <span>
+                            Fatigue
+                        </span>
+
+                        <span>
+                            Bloating
+                        </span>
+
+                        <span>
+                            Painful Periods
+                        </span>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ==========================
+                     RISK SCORE
+                =========================== -->
+
+                <section class="report-section">
+
+                    <h2>
+                        Risk Score
+                    </h2>
+
+
+                    <div class="report-risk-score">
+
+                        <strong>
+                            72
+                        </strong>
+
+                        <span>
+                            /100
+                        </span>
+
+
+                        <p>
+                            Moderate to High Risk
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ==========================
+                     RECOMMENDATION
+                =========================== -->
+
+                <section class="report-section recommendation">
+
+                    <h2>
+                        Recommendation
+                    </h2>
+
+
+                    <p>
+                        Please consult a gynecologist
+                        specialising in endometriosis for
+                        further evaluation.
+                    </p>
+
+                </section>
+
+
+
+                <!-- ==========================
+                     DOWNLOAD PDF BUTTON
+                =========================== -->
+
+                <button
+                    type="button"
+                    class="download-report-btn"
+                    id="downloadReport">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    <span>
+                        Download PDF
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         HTML2PDF LIBRARY
+         This converts the report into a PDF
+    ================================================== -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js">
+    </script>
+
+
+
+    <!-- =================================================
+         YOUR JAVASCRIPT
+    ================================================== -->
+
+    <script src="doctor-report.js"></script>
+
+
+</body>
+
+</html>
