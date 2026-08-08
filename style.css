@@ -2208,3 +2208,977 @@ SMALL SCREEN ANIMATION
     }
 
 }
+```css
+/* =====================================================
+   ENDOSENSE AI
+   INFORMATION / CONSENT PAGE
+===================================================== */
+
+
+/* =====================================================
+   INFORMATION SCREEN
+===================================================== */
+
+.information-screen {
+
+    width: 100%;
+
+    height: calc(100% - 40px);
+
+    padding: 28px 20px 25px;
+
+    background: #E6D3A3;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    scrollbar-width: none;
+}
+
+
+.information-screen::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =====================================================
+   INFORMATION HEADER
+===================================================== */
+
+.information-header {
+
+    width: 100%;
+
+    text-align: center;
+
+    flex-shrink: 0;
+
+    margin-bottom: 18px;
+}
+
+
+.information-header h1 {
+
+    margin: 0 0 7px;
+
+    color: #2E1C30;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.4px;
+}
+
+
+.information-header p {
+
+    max-width: 310px;
+
+    margin: 0 auto;
+
+    color: #6F626C;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   INFORMATION CONTENT
+===================================================== */
+
+.information-content {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* =====================================================
+   INFORMATION CARD
+===================================================== */
+
+.information-card {
+
+    width: 100%;
+
+    background: #F7EFD9;
+
+    border: 1px solid #E8DCC2;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 6px 15px rgba(90, 61, 92, 0.07);
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+
+.information-card:hover {
+
+    transform: translateY(-2px);
+
+    background: #FBF4E5;
+
+    box-shadow:
+        0 9px 20px rgba(90, 61, 92, 0.13);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.information-card-header {
+
+    width: 100%;
+
+    min-height: 67px;
+
+    padding: 10px 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =====================================================
+   INFORMATION ICON
+===================================================== */
+
+.information-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #E8D6EA;
+
+    color: #5A3D5C;
+
+    font-size: 15px;
+
+    transition: .25s ease;
+}
+
+
+.information-card:hover .information-icon {
+
+    background: #5A3D5C;
+
+    color: #FFFFFF;
+}
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.information-title {
+
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.information-number {
+
+    color: #A78AA9;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: .7px;
+}
+
+
+.information-title h2 {
+
+    margin: 0;
+
+    color: #2E1C30;
+
+    font-size: 14px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   DOWN ARROW
+===================================================== */
+
+.information-arrow {
+
+    flex-shrink: 0;
+
+    color: #8A718C;
+
+    font-size: 11px;
+
+    transition: transform .3s ease,
+                color .25s ease;
+}
+
+
+.information-card:hover .information-arrow {
+
+    color: #5A3D5C;
+
+    transform: rotate(180deg);
+}
+
+
+/* =====================================================
+   HIDDEN DETAILS
+===================================================== */
+
+.information-details {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    padding: 0 15px;
+
+    opacity: 0;
+
+    transition:
+        max-height .35s ease,
+        padding .35s ease,
+        opacity .25s ease;
+}
+
+
+.information-card:hover .information-details {
+
+    max-height: 160px;
+
+    padding: 0 15px 14px;
+
+    opacity: 1;
+}
+
+
+/* =====================================================
+   INFORMATION TEXT
+===================================================== */
+
+.information-details p {
+
+    margin: 0;
+
+    color: #5F555F;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   SECTION REFERENCE
+===================================================== */
+
+.section-reference {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    padding: 4px 8px;
+
+    background: #E9D9EA;
+
+    border-radius: 8px;
+
+    color: #5A3D5C;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   ACCEPT CONTAINER
+===================================================== */
+
+.accept-container {
+
+    width: 100%;
+
+    margin-top: 16px;
+
+    padding-bottom: 5px;
+
+    flex-shrink: 0;
+}
+
+
+/* =====================================================
+   ACCEPT BUTTON
+===================================================== */
+
+.accept-button {
+
+    width: 100%;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #5A3D5C;
+
+    color: #FFFFFF;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 9px 20px rgba(90, 61, 92, 0.20);
+
+    transition: all .25s ease;
+}
+
+
+.accept-button:hover {
+
+    background: #472F49;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 24px rgba(90, 61, 92, 0.25);
+}
+
+
+.accept-button:active {
+
+    transform: scale(.97);
+}
+
+
+.accept-button i {
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   SMALL PHONE
+===================================================== */
+
+@media (max-height: 750px) {
+
+    .information-screen {
+
+        padding-top: 20px;
+
+    }
+
+
+    .information-header {
+
+        margin-bottom: 13px;
+
+    }
+
+
+    .information-header h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .information-header p {
+
+        font-size: 11px;
+
+    }
+
+
+    .information-content {
+
+        gap: 8px;
+
+    }
+
+
+    .information-card-header {
+
+        min-height: 59px;
+
+        padding: 8px 10px;
+
+    }
+
+
+    .information-icon {
+
+        width: 34px;
+
+        height: 34px;
+
+        border-radius: 10px;
+
+        font-size: 13px;
+
+    }
+
+
+    .information-title h2 {
+
+        font-size: 13px;
+
+    }
+
+
+    .accept-container {
+
+        margin-top: 12px;
+
+    }
+
+
+    .accept-button {
+
+        height: 52px;
+
+    }
+
+}
+```css
+/* =====================================================
+   ENDOSENSE AI
+   DOCTOR REPORT PAGE
+===================================================== */
+
+
+/* =====================================================
+   REPORT SCREEN
+===================================================== */
+
+.risk-screen {
+    width: 100%;
+    height: calc(100% - 40px);
+
+    padding: 0;
+
+    background: #E6D3A3;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    display: block;
+
+    scrollbar-width: none;
+}
+
+.risk-screen::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =====================================================
+   REPORT CONTAINER
+===================================================== */
+
+.endo-report {
+    width: 100%;
+
+    padding: 25px 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    color: #2E1C30;
+}
+
+
+/* =====================================================
+   REPORT HEADER
+===================================================== */
+
+.report-header {
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+.report-header h1 {
+    margin: 0 0 7px;
+
+    color: #2E1C30;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.4px;
+}
+
+
+.report-header p {
+    margin: 0;
+
+    color: #776B75;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   REPORT SECTIONS
+===================================================== */
+
+.report-section {
+    width: 100%;
+
+    margin-bottom: 14px;
+
+    padding: 16px;
+
+    background: #F7EFD9;
+
+    border: 1px solid #E8DCC2;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 6px 15px rgba(90, 61, 92, 0.07);
+}
+
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+.report-section h2 {
+    margin: 0 0 11px;
+
+    color: #2E1C30;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* =====================================================
+   SUMMARY LIST
+===================================================== */
+
+.report-section ul {
+    margin: 0;
+
+    padding-left: 19px;
+
+    color: #5F555F;
+}
+
+
+.report-section li {
+    margin-bottom: 7px;
+
+    padding-left: 2px;
+
+    font-size: 12px;
+
+    line-height: 1.45;
+}
+
+
+.report-section li:last-child {
+    margin-bottom: 0;
+}
+
+
+.report-section li::marker {
+    color: #8A3FB4;
+
+    font-size: 9px;
+}
+
+
+.report-section strong {
+    color: #5A3D5C;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   SYMPTOM TAGS
+===================================================== */
+
+.symptom-tags {
+    width: 100%;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+.symptom-tags span {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 7px 10px;
+
+    background: #E8D6EA;
+
+    border: 1px solid #D8BEDB;
+
+    border-radius: 999px;
+
+    color: #5A3D5C;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* =====================================================
+   RISK SCORE
+===================================================== */
+
+.report-risk-score {
+    width: 100%;
+
+    padding: 16px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #E9D9EA;
+
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+
+.report-risk-score strong {
+    color: #5A3D5C;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+.report-risk-score span {
+    margin-top: 2px;
+
+    color: #8A718C;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.report-risk-score p {
+    margin: 8px 0 0;
+
+    padding: 6px 11px;
+
+    background: #F7EFD9;
+
+    border-radius: 999px;
+
+    color: #A56B20;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   RECOMMENDATION
+===================================================== */
+
+.report-section.recommendation {
+    background: #F7EFD9;
+
+    border-left: 4px solid #5A3D5C;
+}
+
+
+.recommendation p {
+    margin: 0;
+
+    color: #5F555F;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+}
+
+
+/* =====================================================
+   DOWNLOAD PDF BUTTON
+===================================================== */
+
+.download-report-btn {
+    width: 100%;
+
+    min-height: 54px;
+
+    margin-top: 3px;
+
+    padding: 0 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #5A3D5C;
+
+    color: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 9px 20px rgba(90, 61, 92, 0.20);
+
+    transition:
+        background .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.download-report-btn:hover {
+    background: #472F49;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 24px rgba(90, 61, 92, 0.25);
+}
+
+
+.download-report-btn:active {
+    transform: scale(.97);
+}
+
+
+.download-report-btn i {
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   PDF MODE
+   Keeps the report clean when html2pdf
+   captures #endoReport
+===================================================== */
+
+#endoReport.pdf-mode {
+    width: 100%;
+
+    padding: 20px;
+
+    background: #E6D3A3;
+}
+
+
+#endoReport.pdf-mode .download-report-btn {
+    display: none;
+}
+
+
+/* =====================================================
+   SHORT PHONE
+===================================================== */
+
+@media (max-height: 750px) {
+
+    .endo-report {
+        padding: 20px 18px 25px;
+    }
+
+
+    .report-header {
+        margin-bottom: 15px;
+    }
+
+
+    .report-header h1 {
+        font-size: 21px;
+    }
+
+
+    .report-header p {
+        font-size: 10px;
+    }
+
+
+    .report-section {
+        margin-bottom: 10px;
+
+        padding: 13px;
+
+        border-radius: 16px;
+    }
+
+
+    .report-section h2 {
+        font-size: 14px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .report-section li {
+        font-size: 11px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .symptom-tags {
+        gap: 5px;
+    }
+
+
+    .symptom-tags span {
+        padding: 6px 8px;
+
+        font-size: 9px;
+    }
+
+
+    .report-risk-score {
+        padding: 13px;
+    }
+
+
+    .report-risk-score strong {
+        font-size: 36px;
+    }
+
+
+    .report-risk-score p {
+        margin-top: 6px;
+    }
+
+
+    .recommendation p {
+        font-size: 11px;
+    }
+
+
+    .download-report-btn {
+        min-height: 50px;
+
+        font-size: 14px;
+    }
+
+}
+```
