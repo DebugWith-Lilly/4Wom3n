@@ -1533,87 +1533,143 @@ SMALL SCREEN ANIMATION
 
 }
 /* =====================================================
-   ENDOSENSE AI REPORT SCREEN
+   ENDOSENSE AI
+   HOME / DASHBOARD
+   FINAL VERSION
 ===================================================== */
+
 
 /* =====================================================
-   REPORT SCREEN
+   HOME SCREEN
 ===================================================== */
 
-.risk-screen {
+.home-screen {
 
     width: 100%;
 
+    height: calc(100% - 40px);
+
+    padding: 0 20px 22px;
+
     background: #E6D3A3;
 
-    padding: 20px 22px 30px;
-
     overflow-y: auto;
+
     overflow-x: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
 
     scrollbar-width: none;
 
-    align-items: stretch;
-
 }
 
-.risk-screen::-webkit-scrollbar {
+.home-screen::-webkit-scrollbar {
     display: none;
 }
 
 
 /* =====================================================
-   REPORT CONTAINER
+   TOP HEADER
 ===================================================== */
 
-.endo-report {
+.home-header {
 
     width: 100%;
 
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-shrink: 0;
+
+}
+
+
+.menu-button,
+.notification-button {
+
+    width: 36px;
+
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
     color: #2E1C30;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+
+    cursor: pointer;
+
+    padding: 0;
+
+}
+
+
+.menu-button:hover,
+.notification-button:hover {
+
+    color: #5A3D5C;
 
 }
 
 
 /* =====================================================
-   REPORT HEADER
+   GREETING
 ===================================================== */
 
-.report-header {
+.greeting {
 
     width: 100%;
 
-    padding: 5px 0 18px;
+    margin-top: 0;
 
-    border-bottom: 1px solid rgba(90, 61, 92, 0.12);
+    text-align: left;
+
+    flex-shrink: 0;
 
 }
 
 
-.report-header h1 {
+.greeting h1 {
 
-    margin: 0 0 7px;
+    margin: 0 0 4px;
 
     color: #2E1C30;
 
-    font-size: 20px;
+    font-size: 25px;
+
+    line-height: 1.15;
 
     font-weight: 700;
 
-    line-height: 1.25;
+    letter-spacing: -0.4px;
 
 }
 
 
-.report-header p {
+.greeting p {
 
     margin: 0;
 
     color: #6F626C;
 
-    font-size: 12px;
+    font-size: 13px;
 
     line-height: 1.4;
 
@@ -1621,23 +1677,74 @@ SMALL SCREEN ANIMATION
 
 
 /* =====================================================
-   REPORT SECTIONS
+   HERO IMAGE
 ===================================================== */
 
-.report-section {
+.home-image {
 
     width: 100%;
 
-    padding: 18px 0;
+    height: 205px;
 
-    border-bottom: 1px solid rgba(90, 61, 92, 0.10);
+    margin-top: 2px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
 
 }
 
 
-.report-section h2 {
+/*
+   IMPORTANT:
+   Make sure home-image.png exists in the
+   SAME folder as index.html.
+*/
 
-    margin: 0 0 12px;
+.home-image img {
+
+    width: 235px;
+
+    height: 195px;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+
+
+/* =====================================================
+   SUMMARY CARD
+===================================================== */
+
+.summary-card {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    background: #F7EFD9;
+
+    border: 1px solid #E8DCC2;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 7px 18px rgba(90, 61, 92, 0.08);
+
+    flex-shrink: 0;
+
+}
+
+
+.summary-card h2 {
+
+    margin: 0 0 9px;
 
     color: #2E1C30;
 
@@ -1645,156 +1752,65 @@ SMALL SCREEN ANIMATION
 
     font-weight: 700;
 
-    line-height: 1.3;
-
 }
 
 
 /* =====================================================
-   SUMMARY
+   SUMMARY ROW
 ===================================================== */
 
-.report-section ul {
-
-    margin: 0;
-
-    padding-left: 18px;
-
-    color: #4F4650;
-
-}
-
-
-.report-section li {
-
-    margin-bottom: 8px;
-
-    padding-left: 3px;
-
-    color: #4F4650;
-
-    font-size: 13px;
-
-    line-height: 1.45;
-
-}
-
-
-.report-section li:last-child {
-
-    margin-bottom: 0;
-
-}
-
-
-.report-section li::marker {
-
-    color: #5A3D5C;
-
-    font-size: 10px;
-
-}
-
-
-.report-section li strong {
-
-    color: #2E1C30;
-
-}
-
-
-/* =====================================================
-   TOP SYMPTOMS
-===================================================== */
-
-.symptom-tags {
+.summary-row {
 
     width: 100%;
 
+    min-height: 27px;
+
+    padding: 1px 0;
+
     display: flex;
 
-    flex-wrap: wrap;
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-decoration: none;
+
+    color: #4F4650;
+
+    border-radius: 8px;
+
+    transition: .2s ease;
+
+}
+
+
+.summary-row:hover {
+
+    background: rgba(90, 61, 92, 0.06);
+
+}
+
+
+.summary-left {
+
+    display: flex;
+
+    align-items: center;
 
     gap: 8px;
 
-}
-
-
-.symptom-tags span {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 7px 11px;
-
-    background: #F7D9DC;
-
-    border-radius: 999px;
-
-    color: #A94E62;
-
-    font-size: 12px;
-
-    font-weight: 600;
-
-    line-height: 1;
-
-}
-
-
-/* =====================================================
-   RISK SCORE
-===================================================== */
-
-.report-risk-score {
-
-    display: flex;
-
-    align-items: baseline;
-
-    flex-wrap: wrap;
-
-}
-
-
-.report-risk-score strong {
-
-    color: #5A3D5C;
-
-    font-size: 32px;
-
-    font-weight: 800;
-
-    line-height: 1;
-
-}
-
-
-.report-risk-score span {
-
-    margin-left: 3px;
-
-    color: #786B75;
-
-    font-size: 15px;
+    font-size: 11px;
 
     font-weight: 600;
 
 }
 
 
-.report-risk-score p {
-
-    width: 100%;
-
-    margin: 7px 0 0;
+.summary-row strong {
 
     color: #5A3D5C;
 
-    font-size: 13px;
+    font-size: 11px;
 
     font-weight: 700;
 
@@ -1802,42 +1818,14 @@ SMALL SCREEN ANIMATION
 
 
 /* =====================================================
-   RECOMMENDATION
+   SUMMARY ICONS
 ===================================================== */
 
-.recommendation {
+.summary-icon {
 
-    border-bottom: none;
+    width: 18px;
 
-}
-
-
-.recommendation p {
-
-    margin: 0;
-
-    color: #4F4650;
-
-    font-size: 13px;
-
-    line-height: 1.55;
-
-}
-
-
-/* =====================================================
-   DOWNLOAD PDF BUTTON
-===================================================== */
-
-.download-report-btn {
-
-    width: 100%;
-
-    min-height: 50px;
-
-    margin-top: 18px;
-
-    padding: 0 18px;
+    height: 18px;
 
     display: flex;
 
@@ -1845,169 +1833,377 @@ SMALL SCREEN ANIMATION
 
     justify-content: center;
 
-    gap: 9px;
+    border-radius: 6px;
 
-    border: none;
-
-    border-radius: 16px;
-
-    background: #5A3D5C;
-
-    color: #FFFFFF;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 15px;
-
-    font-weight: 600;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 8px 18px rgba(90, 61, 92, 0.20);
-
-    transition: all 0.25s ease;
+    font-size: 8px;
 
 }
 
 
-.download-report-btn:hover {
+/* Cycle */
 
-    background: #472F49;
+.cycle-icon {
+
+    background: #F5D7DD;
+
+    color: #A94E62;
+
+}
+
+
+/* Period */
+
+.period-icon {
+
+    background: #F7DDE0;
+
+    color: #C66A76;
+
+}
+
+
+/* Ovulation */
+
+.fertile-icon {
+
+    background: #D7EFE4;
+
+    color: #348B72;
+
+}
+
+
+/* Risk */
+
+.risk-icon {
+
+    background: #D6EEE7;
+
+    color: #348B72;
+
+}
+
+
+.risk-text {
+
+    color: #A56B20 !important;
+
+}
+
+
+/* =====================================================
+   QUICK ACTIONS
+===================================================== */
+
+.quick-actions {
+
+    width: 100%;
+
+    margin-top: 14px;
+
+    flex-shrink: 0;
+
+}
+
+
+.quick-actions h2 {
+
+    margin: 0 0 9px;
+
+    color: #2E1C30;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   ACTION GRID
+===================================================== */
+
+.action-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 9px;
+
+}
+
+
+/* =====================================================
+   ACTION CARD
+===================================================== */
+
+.action-card {
+
+    height: 69px;
+
+    padding: 8px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    background: #F7EFD9;
+
+    border: 1px solid #E8DCC2;
+
+    border-radius: 17px;
+
+    text-decoration: none;
+
+    color: #2E1C30;
+
+    box-shadow:
+        0 6px 15px rgba(90, 61, 92, 0.07);
+
+    transition: all .2s ease;
+
+}
+
+
+.action-card:hover {
+
+    background: #EFE3C2;
 
     transform: translateY(-2px);
 
     box-shadow:
-        0 10px 22px rgba(90, 61, 92, 0.25);
+        0 8px 18px rgba(90, 61, 92, 0.12);
 
 }
 
 
-.download-report-btn:active {
+.action-card:active {
 
-    transform: scale(0.98);
-
-}
-
-
-.download-report-btn:disabled {
-
-    opacity: 0.75;
-
-    cursor: wait;
-
-    transform: none;
+    transform: scale(.97);
 
 }
 
 
 /* =====================================================
-   DOWNLOAD ICON
+   ACTION TEXT
 ===================================================== */
 
-.download-report-btn i {
+.action-card span {
 
-    font-size: 14px;
+    color: #4F4650;
+
+    font-size: 10px;
+
+    font-weight: 700;
 
 }
 
 
 /* =====================================================
-   PDF CAPTURE
+   ACTION ICON
 ===================================================== */
 
-/*
-   Keeps the report background when html2canvas
-   captures the report.
-*/
+.action-icon {
 
-.endo-report {
+    width: 29px;
 
-    background: #E6D3A3;
+    height: 29px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+
+}
+
+
+/* Symptoms */
+
+.symptoms-icon {
+
+    background: #F4DFC2;
+
+    color: #A76B27;
+
+}
+
+
+/* Pain Map */
+
+.pain-icon {
+
+    background: #E8D6EA;
+
+    color: #914B99;
+
+}
+
+
+/* Calendar */
+
+.calendar-icon {
+
+    background: #F3DCE0;
+
+    color: #A94E62;
+
+}
+
+
+/* AI Chat */
+
+.chat-icon {
+
+    background: #E5D4E8;
+
+    color: #96599D;
 
 }
 
 
 /* =====================================================
-   SMALL PHONE SCREENS
+   DECORATIVE CORNER
+===================================================== */
+
+.corner-decoration {
+
+    position: fixed;
+
+    left: 0;
+
+    bottom: 20px;
+
+    width: 36px;
+
+    height: 100px;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 10;
+
+}
+
+
+.corner-decoration span {
+
+    position: absolute;
+
+    width: 60px;
+
+    height: 11px;
+
+    background: #5A3D5C;
+
+    opacity: .85;
+
+    transform: rotate(-45deg);
+
+}
+
+
+.corner-decoration span:nth-child(1) {
+
+    left: -20px;
+
+    top: 20px;
+
+}
+
+
+.corner-decoration span:nth-child(2) {
+
+    left: -20px;
+
+    top: 43px;
+
+}
+
+
+.corner-decoration span:nth-child(3) {
+
+    left: -20px;
+
+    top: 66px;
+
+}
+
+
+/* =====================================================
+   SHORT PHONE
 ===================================================== */
 
 @media (max-height: 750px) {
 
-    .risk-screen {
+    .home-header {
 
-        padding: 15px 20px 25px;
-
-    }
-
-
-    .report-header {
-
-        padding-bottom: 14px;
+        height: 45px;
 
     }
 
 
-    .report-header h1 {
+    .greeting h1 {
 
-        font-size: 18px;
-
-    }
-
-
-    .report-section {
-
-        padding: 15px 0;
+        font-size: 22px;
 
     }
 
 
-    .report-section h2 {
+    .home-image {
 
-        font-size: 14px;
-
-        margin-bottom: 10px;
+        height: 165px;
 
     }
 
 
-    .report-section li {
+    .home-image img {
 
-        font-size: 12px;
+        width: 200px;
 
-        margin-bottom: 6px;
-
-    }
-
-
-    .symptom-tags span {
-
-        font-size: 11px;
-
-        padding: 6px 10px;
+        height: 160px;
 
     }
 
 
-    .report-risk-score strong {
+    .summary-card {
 
-        font-size: 29px;
-
-    }
-
-
-    .recommendation p {
-
-        font-size: 12px;
+        padding: 12px 14px;
 
     }
 
 
-    .download-report-btn {
+    .summary-row {
 
-        min-height: 48px;
+        min-height: 25px;
 
-        margin-top: 15px;
+    }
+
+
+    .quick-actions {
+
+        margin-top: 10px;
+
+    }
+
+
+    .action-card {
+
+        height: 62px;
 
     }
 
