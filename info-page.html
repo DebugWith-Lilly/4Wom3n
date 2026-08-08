@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EndoSense AI - Information</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="phone">
+
+
+    <!-- ==========================
+         STATUS BAR
+    ========================== -->
+
+    <div class="status-bar">
+
+        <span id="time">00:00</span>
+
+        <div class="status-icons">
+
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==========================
+         SCREEN
+    ========================== -->
+
+    <div class="screen information-screen">
+
+
+        <!-- ==========================
+             HEADER
+        ========================== -->
+
+        <div class="information-header">
+
+            <h1>Your Information</h1>
+
+            <p>
+                Here's how EndoSense AI handles
+                your personal and health information.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==========================
+             INFORMATION CARDS
+        ========================== -->
+
+        <div class="information-content">
+
+
+            <!-- ==========================
+                 CARD 1
+            ========================== -->
+
+            <div class="information-card">
+
+                <div class="information-card-header">
+
+                    <div class="information-icon">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+
+                    <div class="information-title">
+
+                        <span>01</span>
+
+                        <h2>Your Consent</h2>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down information-arrow"></i>
+
+                </div>
+
+
+                <div class="information-details">
+
+                    <p>
+                        We will get your consent before collecting
+                        or using your personal and health information.
+                    </p>
+
+                    <small>
+                        Section 11
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 CARD 2
+            ========================== -->
+
+            <div class="information-card">
+
+                <div class="information-card-header">
+
+                    <div class="information-icon">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+
+                    <div class="information-title">
+
+                        <span>02</span>
+
+                        <h2>Only What We Need</h2>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down information-arrow"></i>
+
+                </div>
+
+
+                <div class="information-details">
+
+                    <p>
+                        We will only collect information we need
+                        to provide screening and healthcare support.
+                    </p>
+
+                    <small>
+                        Sections 9–10
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 CARD 3
+            ========================== -->
+
+            <div class="information-card">
+
+                <div class="information-card-header">
+
+                    <div class="information-icon">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+
+                    <div class="information-title">
+
+                        <span>03</span>
+
+                        <h2>Clear Information</h2>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down information-arrow"></i>
+
+                </div>
+
+
+                <div class="information-details">
+
+                    <p>
+                        We will clearly explain what information
+                        we collect, why we need it, and who it
+                        may be shared with.
+                    </p>
+
+                    <small>
+                        Section 18
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 CARD 4
+            ========================== -->
+
+            <div class="information-card">
+
+                <div class="information-card-header">
+
+                    <div class="information-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div class="information-title">
+
+                        <span>04</span>
+
+                        <h2>Information Protection</h2>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down information-arrow"></i>
+
+                </div>
+
+
+                <div class="information-details">
+
+                    <p>
+                        We will protect your health information
+                        using appropriate security measures and
+                        restrict access to authorised personnel.
+                    </p>
+
+                    <small>
+                        Sections 19 &amp; 26–27
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 CARD 5
+            ========================== -->
+
+            <div class="information-card">
+
+                <div class="information-card-header">
+
+                    <div class="information-icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+
+                    <div class="information-title">
+
+                        <span>05</span>
+
+                        <h2>You Have Control</h2>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down information-arrow"></i>
+
+                </div>
+
+
+                <div class="information-details">
+
+                    <p>
+                        You can access and correct your personal
+                        information and exercise applicable rights
+                        regarding its processing.
+                    </p>
+
+                    <small>
+                        Sections 23–25
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==========================
+             ACCEPT BUTTON
+        ========================== -->
+
+        <div class="accept-container">
+
+            <button
+                type="button"
+                class="accept-button"
+                onclick="acceptInformation()">
+
+                <i class="fa-solid fa-check"></i>
+
+                <span>I Accept</span>
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================
+     JAVASCRIPT
+========================== -->
+
+<script src="script.js"></script>
+
+
+<script>
+
+function acceptInformation() {
+
+    window.location.href = "dashboard.html";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
